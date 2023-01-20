@@ -6,19 +6,19 @@ public class Main {
 
         //creates tasks and sets complexity and priority
         ArrayList<Task> taskList = new ArrayList<Task>();
-        Task t1 = new Task("Wake up", 1);
+        Task t1 = new Task("Wake up", 10);
         t1.setComplexity(5);
         taskList.add(t1);
-        Task t2 = new Task("Eat Breakfast", 2);
-        t2.setComplexity(8);
+        Task t2 = new Task("Eat Breakfast", 9);
+        t2.setComplexity(3);
         taskList.add(t2);
-        Task t3 = new Task("Brush Teeth", 4);
-        t3.setComplexity(3);
+        Task t3 = new Task("Brush Teeth", 6);
+        t3.setComplexity(7);
         taskList.add(t3);
-        Task t4 = new Task("Get Dressed", 4);
+        Task t4 = new Task("Get Dressed", 6);
         t4.setComplexity(5);
         taskList.add(t4);
-        Task t5 = new Task("Read the News", 8);
+        Task t5 = new Task("Read the News", 2);
         t5.setComplexity(9);
         taskList.add(t5);
 
@@ -38,7 +38,7 @@ public class Main {
         Collections.sort(taskList);
 
         //print out the list after sorting
-        for (int i = 0; i < taskList.size(); i++){
+        for (int i = taskList.size() - 1; i >= 0; i--){
             Task temp = taskList.get(i);
             System.out.println(temp);
         }
