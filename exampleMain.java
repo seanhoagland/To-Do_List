@@ -37,7 +37,7 @@ public class Main {
         //sorts the task lit
         Collections.sort(taskList);
 
-        //print out the list after sorting
+        //print out the reversed list after sorting
         for (int i = taskList.size() - 1; i >= 0; i--){
             Task temp = taskList.get(i);
             System.out.println(temp);
